@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background: radial-gradient(rgb(18, 18, 205), rgb(232, 14, 232));
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: linear-gradient(
+    120deg,
+    rgba(232, 14, 232, 0.449),
+    rgba(18, 18, 205, 0.449)
+  );
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  max-width: 400px;
+}
+
+.card img {
+  width: 150px;
+  object-fit: contain;
+  filter: drop-shadow(10px 1px 10px #212121);
+}
+
+.card h1 {
+  color: #fff;
+  filter: drop-shadow(10px 1px 5px #212121);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn a {
+  display: flex;
+  gap: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: #4e0909;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #4e0909;
+  outline: none;
+  border-radius: 9px;
+  font-weight: bold;
+  transition: all 0.5s ease;
+  filter: drop-shadow(7px 4px 7px #212121);
+}
+
+.btn a svg {
+  width: 15px;
+  fill: red;
+}
+
+.btn a:hover {
+  background-color: white;
+  color: #4e0909;
+  border: 1px solid #4e0909;
+}
